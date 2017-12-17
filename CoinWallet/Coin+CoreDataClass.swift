@@ -15,12 +15,9 @@ public class Coin: NSManagedObject {
     
     class func fetchOrInsert (attributes: [String : Any], managedObjectContext: NSManagedObjectContext) -> Coin? {
         
-        
         guard let coinID = attributes["id"] as? String else {
                 return nil
         }
-        
-        
         
         let coin: Coin = {
             
@@ -72,5 +69,23 @@ public class Coin: NSManagedObject {
         
         return coin
     }
+    
+    class func saveCoin(coinID: String, managedObjectContext: NSManagedObjectContext) -> Coin? {
+        
+        let fetchRequest = NSFetchRequest<Coin>(entityName: "Coin")
+        
+        fetchRequest.predicate = NSPredicate.init(format: "coinSymbol == %@", coinID)
 
+        fetchRequest.fetchLimit = 10
+        
+        do {
+            let results = try! managedObjectContext.fetch(fetchRequest)
+            if results.count > 0 {
+                if let fetchedCrypto: Coin = results[0] as? Coin {
+                    return fetchedCrypto
+                }
+            }
+        }
+        return nil
+    }
 }

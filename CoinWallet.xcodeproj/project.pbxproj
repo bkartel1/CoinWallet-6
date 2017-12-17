@@ -18,6 +18,8 @@
 		03A815161FDD8F2A002A998A /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A815151FDD8F2A002A998A /* CoinTableViewCell.swift */; };
 		03A815191FDD8FE4002A998A /* Coin+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A815171FDD8FE4002A998A /* Coin+CoreDataClass.swift */; };
 		03A8151A1FDD8FE4002A998A /* Coin+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A815181FDD8FE4002A998A /* Coin+CoreDataProperties.swift */; };
+		03A8151C1FDDC558002A998A /* CoinPortofolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8151B1FDDC558002A998A /* CoinPortofolioViewController.swift */; };
+		03B9B3E51FE4758000D8C28A /* MyCoinValuesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9B3E41FE4758000D8C28A /* MyCoinValuesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		03A815151FDD8F2A002A998A /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
 		03A815171FDD8FE4002A998A /* Coin+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coin+CoreDataClass.swift"; sourceTree = "<group>"; };
 		03A815181FDD8FE4002A998A /* Coin+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coin+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		03A8151B1FDDC558002A998A /* CoinPortofolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPortofolioViewController.swift; sourceTree = "<group>"; };
+		03B9B3E41FE4758000D8C28A /* MyCoinValuesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoinValuesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +91,14 @@
 		03A814EF1FDD8A8B002A998A /* CoinWallet */ = {
 			isa = PBXGroup;
 			children = (
+				03B9B3E41FE4758000D8C28A /* MyCoinValuesTableViewCell.swift */,
 				03A815171FDD8FE4002A998A /* Coin+CoreDataClass.swift */,
 				03A815181FDD8FE4002A998A /* Coin+CoreDataProperties.swift */,
 				03A815151FDD8F2A002A998A /* CoinTableViewCell.swift */,
 				03A815131FDD8EA9002A998A /* CoinDetailViewController.swift */,
 				03A814F01FDD8A8B002A998A /* AppDelegate.swift */,
 				03A814F21FDD8A8B002A998A /* CoinViewController.swift */,
+				03A8151B1FDDC558002A998A /* CoinPortofolioViewController.swift */,
 				03A814F41FDD8A8B002A998A /* Main.storyboard */,
 				03A814FA1FDD8A8C002A998A /* Assets.xcassets */,
 				03A814FC1FDD8A8C002A998A /* LaunchScreen.storyboard */,
@@ -215,7 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A8151A1FDD8FE4002A998A /* Coin+CoreDataProperties.swift in Sources */,
+				03B9B3E51FE4758000D8C28A /* MyCoinValuesTableViewCell.swift in Sources */,
 				03A815141FDD8EA9002A998A /* CoinDetailViewController.swift in Sources */,
+				03A8151C1FDDC558002A998A /* CoinPortofolioViewController.swift in Sources */,
 				03A814F31FDD8A8B002A998A /* CoinViewController.swift in Sources */,
 				03A814F11FDD8A8B002A998A /* AppDelegate.swift in Sources */,
 				03A814F91FDD8A8B002A998A /* CoinWallet.xcdatamodeld in Sources */,

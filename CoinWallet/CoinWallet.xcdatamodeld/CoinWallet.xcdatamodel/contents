@@ -9,8 +9,9 @@
         <attribute name="coinPriceNOK" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="coinPriceUSD" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="coinSymbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="myCoinValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Coin" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Coin" positionX="-63" positionY="-18" width="128" height="180"/>
     </elements>
 </model>
