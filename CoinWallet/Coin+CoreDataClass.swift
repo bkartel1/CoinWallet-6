@@ -75,14 +75,15 @@ public class Coin: NSManagedObject {
         let fetchRequest = NSFetchRequest<Coin>(entityName: "Coin")
         
         fetchRequest.predicate = NSPredicate.init(format: "coinSymbol == %@", coinID)
-
-        fetchRequest.fetchLimit = 10
+        
+        fetchRequest.fetchBatchSize = 1
+        fetchRequest.fetchLimit = 1
         
         do {
             let results = try! managedObjectContext.fetch(fetchRequest)
             if results.count > 0 {
-                if let fetchedCrypto: Coin = results[0] as? Coin {
-                    return fetchedCrypto
+                if let coinFetch: Coin = results[0] as? Coin {
+                    return coinFetch
                 }
             }
         }

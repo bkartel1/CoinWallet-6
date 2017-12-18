@@ -101,21 +101,9 @@ class CoinDetailViewController: UIViewController {
                 self.myAmount.text = "\(Double((oneCoin.myCoinValue)))"
                 self.myValue.text =  "\(Double(round(1000*(oneCoin.myCoinValue * oneCoin.coinPriceNOK)/1000))) kr"
                 
-                if Double(self.myAmount.text!)! == 0.0 {
-                    self.myAmount.isHidden = true
-                    self.myValue.isHidden = true
-                    self.myValueLabel.isHidden = true
-                    self.myAmountLabel.isHidden = true
-                }else{
-                self.myAmount.isHidden = false
-                self.myValue.isHidden = false
-                self.myValueLabel.isHidden = false
-                self.myAmountLabel.isHidden = false
-                }
             }
             appDelegate.saveContext()
         }
-        
         appDelegate.saveContext()
          
     }

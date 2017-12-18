@@ -84,7 +84,7 @@ class CoinPortofolioViewController: UIViewController {
         
         if let oneCoin = Coin.saveCoin(coinID: (ID) ,managedObjectContext: appDelegate.persistentContainer.viewContext) {
             
-            oneCoin.myCoinValue -= amount
+            oneCoin.myCoinValue += amount
         }
         appDelegate.saveContext()
         getTotalValue()
