@@ -97,9 +97,6 @@ class CoinViewController: UIViewController {
             detailViewController.coin = coin
         }
     }
-    
-    
-    
 }
 
 extension CoinViewController : UITableViewDataSource {

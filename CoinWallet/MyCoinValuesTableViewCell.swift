@@ -24,10 +24,10 @@ class MyCoinValuesTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        if Double(self.amountInCoin.text!)! == 0.0 {
-            self.amountInCoin.isHidden = true
-            self.coinValue.isHidden = true
-            self.coinNameLabel.isHidden = true
-        }
+//        if Double(self.amountInCoin.text!)! == 0.0 {
+//            self.amountInCoin.isHidden = true
+//            self.coinValue.isHidden = true
+//            self.coinNameLabel.isHidden = true
+//        }
     }
 }
